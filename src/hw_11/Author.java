@@ -1,12 +1,16 @@
 package hw_11;
 
 public class Author {
-        String authorFirstName;
-        String authorLastName;
+        private String authorFirstName;
+        private String authorLastName;
+        private String authorMiddleName;
 
-        public Author (String authorFirstName, String authorLastName) {
+
+        public Author (String authorFirstName, String authorLastName, String authorMiddleName) {
+
                 this.authorFirstName = authorFirstName;
                 this.authorLastName = authorLastName;
+                this.authorMiddleName = authorMiddleName;
         }
 
         public String getAuthorFirstName() {
@@ -15,6 +19,10 @@ public class Author {
 
         public String getAuthorLastName() {
                 return this.authorLastName;
+        }
+
+        public String getAuthorMiddleName() {
+                return this.authorMiddleName;
         }
 
 }

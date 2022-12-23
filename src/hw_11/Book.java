@@ -1,18 +1,18 @@
 package hw_11;
 
 public class Book {
-    String authorName;
-    String bookName;
-    int publishingYear;
+    private Author authorName;
+    private String bookName;
+    private int publishingYear;
 
-    public Book (String authorName, String bookName, int publishingYear) {
+    public Book (Author authorName, String bookName, int publishingYear) {
         this.authorName = authorName;
         this.bookName = bookName;
         this.publishingYear = publishingYear;
     }
 
-    public  String getBookAuthorName() {
-        return this.authorName;
+    public  Author getBookAuthorName() {
+        return authorName;
     }
 
     public  String getBookName() {
